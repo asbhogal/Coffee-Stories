@@ -1,0 +1,468 @@
+/*
+Theme Name: Coffee Stories
+Text Domain: Coffee Stories
+Version: 1.0.0
+Description: Welcome to Coffee Stories. A hub for your tales, and from those around the world, all shared over a cup of Joe. That long-awaited catch-up with a college friend who moved to another country five years prior. A return to the cafe you first met your partner at. The country that made you fall in love with robusta blends. Coffee Stories is your diary to record these, and share them with the world. The theme is fully responsive and optimised, and built using HTML5, CSS/SCSS, JavaScript and jQuery.
+Tags: coffee, blog, stories, responsive, optimised
+Author: Aman Singh Bhogal
+Author URI: https://amansinghbhogal.com/
+*/
+
+
+@import "partials/variables", "partials/typography", "partials/mixins", "partials/contactform";
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: 0;
+    background: $body-background;
+}
+
+/*********** TYPOGRAPHY ***********/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: $font-color;
+}
+
+h1 {
+    font-family: 'The Nautigal', cursive;
+    font-size: 56px;
+    font-weight: 200;
+}
+
+h2,
+h3,
+h4,
+h5,
+p,
+span, 
+ul, 
+ol {
+    font-family: $body-font;
+    font-weight: 200;
+}
+
+a {
+    color: $brown-color;
+    transition: $transitions-long;
+}
+
+a:hover {
+    transition: $transitions-long;
+    color: $font-color;
+}
+
+h3 a{
+    color: $font-color;
+    font-weight: 600;
+    text-decoration: none;
+    transition: $transitions-short;
+    :hover {
+        color: red;
+        transition: 1s $transitions-short;
+    }
+}
+
+.media-body {
+    font-family: $body-font;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    font-family: $body-font;
+}
+
+/*********** HEADERS AND BLOCKS ***********/
+
+.container {
+    padding: 0 125px;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 0 80px;
+    }
+}
+
+#main-header,
+.main-header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width:100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url(/assets/images/5.jpeg);
+    background-attachment: fixed;
+}
+
+.main-header-content {
+    text-align: end;
+}
+
+#section-overlay {
+    background-color: #0000007a;
+    height: 100vh;
+    width: 100%;
+    @include flex-centralised;
+}
+
+#about-header {
+    background-image: url(/assets/images/13.jpeg);
+    background-attachment: fixed;
+}
+
+#blog-post-header {
+    background-image: url(/assets/images/7.jpeg);
+    background-attachment: fixed;
+}
+
+#section-1 {
+    background-image: url(/assets/images/10.jpeg);
+    background-attachment: scroll;
+}
+
+#section-2 {
+    background-image: url(/assets/images/11.jpeg);
+    background-attachment: fixed;
+}
+
+#section-3 {
+    background-image: url(/assets/images/12.jpeg);
+    background-attachment: scroll;
+}
+
+#section-4 {
+    background-image: url(/assets/images/6.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#section-5 {
+    background-image: url(/assets/images/14.jpeg);
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.section {
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include flex-centralised;
+    width:100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.about-section {
+    padding: 40px 0;
+}
+
+.page-title {
+    margin-top: 90px;
+}
+
+/*********** BUTTONS ***********/
+
+.btn-global {
+    padding: 20px 60px;
+    border-radius: 5px;
+    color: #000;
+    border: 1px solid #cdcdcd;
+    background: #cdcdcd;
+    font-family: $body-font;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: $transitions-long;
+    text-decoration: none;
+}
+
+.btn-global:hover{
+    background: #111;
+    transition: 1s ease all;
+}
+
+#comments {
+    font-family: $body-font;
+}
+
+/*********** NAVIGATIONS ***********/
+
+.primary-navbar {
+    @include header-nav-styling;
+}
+
+#main-footer {
+	position: absolute;
+	width: 100%;
+	background: #111;
+}
+
+span {
+    color: $font-color;
+}
+
+.footer-main-content {
+	display: flex;
+	.box {
+		flex-basis: 50%;
+		padding: 10px 20px;
+	}
+}
+
+.email input {
+    text-align: center;
+}
+
+.box h2 {
+	font-size: 1.12rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.box .content {
+	margin: 20px 0 0 0;
+}
+
+.left .content .social{
+	margin: 20px 0 0 0;
+    .fa-envelope {
+        padding: 0;
+    }
+}
+.left .content .social a span {
+		height: 40px;
+		width: 40px;
+		background: #1a1a1a;
+		text-align: center;
+	    font-size: 18px;
+	    border-radius: 5px;
+	}
+
+hr {
+	width: 100%;
+	margin-top: 10px;
+	background: #cdcdcd;
+}
+
+.social {
+    color: whitesmoke;
+    transition: $transitions-short;
+    a {
+        color: $brown-color;
+        transition: $transitions-short;
+    }
+    :hover {
+        transition: $transitions-short;
+        color: $font-color;
+    }
+
+}
+
+.header-separator {
+    width: 50%;
+    margin: 20px 0;
+}
+
+.content span {
+	margin-bottom: 15px;
+}
+
+.content .fas {
+	margin-right: 10px;
+}
+
+.email input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.btn button {
+	width: 100%;
+	outline: none;
+	height: 40px;
+	border-radius: 5px;
+	color: #111;
+	cursor: pointer;
+	transition: $transitions-short;
+	background: #cdcdcd;
+	:hover {
+		background: red;
+		transition: $transitions-short;
+	}
+}
+
+.btn .subscribe-button:hover {
+    color: $brown-color;
+    transition: $transitions-short;
+}
+
+.subscribe-button button {
+    text-transform: uppercase;
+    color: #111;
+    transition: $transitions-short;
+    :hover {
+        color: $brown-color;
+        transition: $transitions-short;
+    }
+}
+
+.bottom center {
+    background: #000;
+    padding: 15px;
+    a {
+        color: $font-color;
+        transition: $transitions-short;
+    }
+    a:hover {
+        color: $brown-color;
+        transition: $transitions-short;
+    }
+}
+
+#main-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 40px;
+    margin-left: 1000px;
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+	.primary-navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #main-footer {
+		position: relative;
+		bottom: 0px;
+	}
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+	.footer-main-content {
+		flex-wrap: wrap;
+		flex-direction: column;
+        align-items: center;
+        h2, p {
+            text-align: center;
+        }
+		.box {
+			margin: 5px 0;
+		}
+	}
+
+    .middle.box {
+        text-align: center;
+    }
+
+    .email input {
+        width: 97.5%;
+    }
+}
+
+.copyright-banner {
+    text-align: center;
+    background: black;
+    p {
+        padding: 20px;
+    }
+    a {
+        color: $font-color;
+        text-decoration: none;
+    }
+}
+
+/****************************************************/
+
+.btn-new {
+    position: relative;
+    padding: 1.4rem 4.2rem;
+    padding-right: 3.1rem;
+    font-size: 1.4rem;
+
+}   
+
+/****************************************************/
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 50%;
+    right: 20px;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #000000;
+    color: #cdcdcd;
+    border-radius: 50px;;
+    cursor: pointer;
+    display: none;
+    z-index: 99999 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #scroll-to-top-btn {
+    	display: block !important;
+    	z-index: 99999 !important;
+    	font-size: 16px !important;
+	}
+}
+
+img {
+    max-width: 100%;
+}
+
+.content-body {
+    color: $font-color;
+}
+
+.blog-nav {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $body-font;
+}
+
+a.more-link {
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .contact-form-container {
+        width: auto;
+    }
+}
+
+.blockquote-footer {
+    font-family: $body-font;
+}

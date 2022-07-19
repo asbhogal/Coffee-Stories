@@ -1,0 +1,637 @@
+/*
+Theme Name: Coffee Stories
+Text Domain: Coffee Stories
+Version: 1.0.0
+Description: Welcome to Coffee Stories. A hub for your tales, and from those around the world, all shared over a cup of Joe. That long-awaited catch-up with a college friend who moved to another country five years prior. A return to the cafe you first met your partner at. The country that made you fall in love with robusta blends. Coffee Stories is your diary to record these, and share them with the world. The theme is fully responsive and optimised, and built using HTML5, CSS/SCSS, JavaScript and jQuery.
+Tags: coffee, blog, stories, responsive, optimised
+Author: Aman Singh Bhogal
+Author URI: https://amansinghbhogal.com/
+*/
+/* THE NAUTIGAL - LATIN - 400 REGULAR */
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap");
+@font-face {
+  font-family: "The Nautigal", cursive;
+  font-style: regular;
+  font-weight: 400;
+  src: url("/typography/TheNautigal-Regular.woff") format("woff"), url("/typography/TheNautigal-Regular.woff2") format("woff2");
+}
+/* ROBOTO CONDENSED - LATIN - 300 LIGHT */
+@font-face {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: light;
+  font-weight: 300;
+  src: url("typography/RobotoCondensed-Light.woff") format("woff"), url("typography/RobotoCondensed-Light.woff2") format("woff2");
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/images/10.jpeg);
+  flex-direction: column;
+  height: 100vh;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 800px;
+  max-width: 800px;
+  padding: 25px 40px 10px 20px;
+}
+.contact-form-container form {
+  padding: 30px;
+}
+.contact-form-container .form-row {
+  display: flex;
+  margin: 32px 0;
+}
+
+form .form-row .input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+form .form-row .textarea {
+  height: 70px;
+}
+
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label,
+.textarea textarea:valid ~ label {
+  transform: translateY(-20px);
+  color: #1e1e1e;
+  font-size: 14px;
+}
+
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+
+.input-data input,
+.textarea textarea {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  border-bottom: 2px solid #cdcdcd;
+  outline: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.input-data label {
+  position: absolute;
+  bottom: 15px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.textarea label {
+  width: 100%;
+  bottom: 40px;
+}
+
+.input-data .underline {
+  bottom: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.input-data .underline:before,
+.input-data .underline:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before, .underline:after,
+.textarea textarea:focus ~ .underline:before, .underline:after,
+.input-data input:valid ~ .underline:before, .underline:after,
+.textarea textarea:valid ~ .underline:before, .underline:after {
+  transform: scaleX(1);
+}
+
+.submit-btn .input-data {
+  height: 45px;
+  width: 25%;
+  overflow: hidden;
+}
+.submit-btn .input-data :hover {
+  color: #cdcdcd;
+  background: #111;
+  transition: 1s all ease-in-out;
+}
+.submit-btn .input-data input {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.submit-btn .input-data .inner {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+}
+
+.submit-btn .input-data:hover .inner {
+  left: 0;
+}
+
+@media (max-width: 700px) {
+  .container .text {
+    font-size: 30px;
+  }
+  .container form {
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row {
+    display: block;
+  }
+  /*form .form-row .input-data{
+    margin: 35px 0!important;
+  }*/
+  /* .submit-btn .input-data{
+     width: 40%!important;
+   }*/
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: 0;
+  background: rgba(64, 35, 15, 0.5019607843);
+}
+
+/*********** TYPOGRAPHY ***********/
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: "The Nautigal", cursive;
+  font-size: 56px;
+  font-weight: 200;
+}
+
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+ul,
+ol {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 200;
+}
+
+a {
+  color: #654321;
+  transition: all 1s ease-in-out;
+}
+
+a:hover {
+  transition: all 1s ease-in-out;
+  color: whitesmoke;
+}
+
+h3 a {
+  color: whitesmoke;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+h3 a :hover {
+  color: red;
+  transition: 1s all 0.5s ease-in-out;
+}
+
+.media-body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*********** HEADERS AND BLOCKS ***********/
+.container {
+  padding: 0 125px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+#main-header,
+.main-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url(/assets/images/5.jpeg);
+  background-attachment: fixed;
+}
+
+.main-header-content {
+  text-align: end;
+}
+
+#section-overlay {
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-header {
+  background-image: url(/assets/images/13.jpeg);
+  background-attachment: fixed;
+}
+
+#blog-post-header {
+  background-image: url(/assets/images/7.jpeg);
+  background-attachment: fixed;
+}
+
+#section-1 {
+  background-image: url(/assets/images/10.jpeg);
+  background-attachment: scroll;
+}
+
+#section-2 {
+  background-image: url(/assets/images/11.jpeg);
+  background-attachment: fixed;
+}
+
+#section-3 {
+  background-image: url(/assets/images/12.jpeg);
+  background-attachment: scroll;
+}
+
+#section-4 {
+  background-image: url(/assets/images/6.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#section-5 {
+  background-image: url(/assets/images/14.jpeg);
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.section {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.about-section {
+  padding: 40px 0;
+}
+
+.page-title {
+  margin-top: 90px;
+}
+
+/*********** BUTTONS ***********/
+.btn-global {
+  padding: 20px 60px;
+  border-radius: 5px;
+  color: #000;
+  border: 1px solid #cdcdcd;
+  background: #cdcdcd;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-global:hover {
+  background: #111;
+  transition: 1s ease all;
+}
+
+#comments {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*********** NAVIGATIONS ***********/
+.primary-navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  background: linear-gradient(rgb(0, 0, 0), rgba(107, 90, 90, 0.3137254902));
+  z-index: 9999;
+}
+.primary-navbar a {
+  color: whitesmoke;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+}
+.primary-navbar :hover {
+  transition: 0.5s ease-in-out;
+  color: #654321;
+}
+.primary-navbar li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+#main-footer {
+  position: absolute;
+  width: 100%;
+  background: #111;
+}
+
+span {
+  color: whitesmoke;
+}
+
+.footer-main-content {
+  display: flex;
+}
+.footer-main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.email input {
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 1.12rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content .social .fa-envelope {
+  padding: 0;
+}
+
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+hr {
+  width: 100%;
+  margin-top: 10px;
+  background: #cdcdcd;
+}
+
+.social {
+  color: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+.social a {
+  color: #654321;
+  transition: all 0.5s ease-in-out;
+}
+.social :hover {
+  transition: all 0.5s ease-in-out;
+  color: whitesmoke;
+}
+
+.header-separator {
+  width: 50%;
+  margin: 20px 0;
+}
+
+.content span {
+  margin-bottom: 15px;
+}
+
+.content .fas {
+  margin-right: 10px;
+}
+
+.email input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.btn button {
+  width: 100%;
+  outline: none;
+  height: 40px;
+  border-radius: 5px;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background: #cdcdcd;
+}
+.btn button :hover {
+  background: red;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn .subscribe-button:hover {
+  color: #654321;
+  transition: all 0.5s ease-in-out;
+}
+
+.subscribe-button button {
+  text-transform: uppercase;
+  color: #111;
+  transition: all 0.5s ease-in-out;
+}
+.subscribe-button button :hover {
+  color: #654321;
+  transition: all 0.5s ease-in-out;
+}
+
+.bottom center {
+  background: #000;
+  padding: 15px;
+}
+.bottom center a {
+  color: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+.bottom center a:hover {
+  color: #654321;
+  transition: all 0.5s ease-in-out;
+}
+
+#main-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 40px;
+  margin-left: 1000px;
+}
+#main-header-text h2 {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  .primary-navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-main-content h2, .footer-main-content p {
+    text-align: center;
+  }
+  .footer-main-content .box {
+    margin: 5px 0;
+  }
+  .middle.box {
+    text-align: center;
+  }
+  .email input {
+    width: 97.5%;
+  }
+}
+.copyright-banner {
+  text-align: center;
+  background: black;
+}
+.copyright-banner p {
+  padding: 20px;
+}
+.copyright-banner a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/****************************************************/
+.btn-new {
+  position: relative;
+  padding: 1.4rem 4.2rem;
+  padding-right: 3.1rem;
+  font-size: 1.4rem;
+}
+
+/****************************************************/
+#scroll-to-top-btn {
+  position: fixed;
+  bottom: 50%;
+  right: 20px;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #000000;
+  color: #cdcdcd;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+  z-index: 99999 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #scroll-to-top-btn {
+    display: block !important;
+    z-index: 99999 !important;
+    font-size: 16px !important;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+.content-body {
+  color: whitesmoke;
+}
+
+.blog-nav {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a.more-link {
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .contact-form-container {
+    width: auto;
+  }
+}
+.blockquote-footer {
+  font-family: "Roboto Condensed", sans-serif;
+}/*# sourceMappingURL=style.css.map */

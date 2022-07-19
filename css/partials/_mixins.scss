@@ -1,0 +1,33 @@
+@mixin header-nav-styling {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(rgb(0, 0, 0),#6b5a5a50);
+    z-index: 9999;
+    a {
+        color: $font-color;
+        transition: 0.5s ease-in-out;
+        text-decoration: none;
+    }
+    :hover {
+        transition: 0.5s ease-in-out;
+        color: $brown-color;
+    }
+    li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+}
+
+@mixin flex-centralised {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
