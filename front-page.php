@@ -9,10 +9,9 @@
     <meta name="description" content="Coffee Stories Blog">
     <meta name="author" content="https://amansinghbhogal.com/">    
     <link rel="shortcut icon" href="\wp-content\themes\coffeestories\assets\images\logos\Logo.png"> 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="\wp-content\themes\coffeestories\style.css">
-    <!-- FontAwesome CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <?php
+        wp_head();
+    ?>
 </head>
 <body>
     <nav class="primary-navbar">
