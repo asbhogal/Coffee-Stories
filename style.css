@@ -263,7 +263,7 @@ h3 a :hover {
   width: 100%;
   margin: 0 auto;
   height: 100vh;
-  background-image: url(/assets/images/5.jpeg);
+  background-image: url(/wp-content/themes/coffeestories/assets/images/5.jpeg);
   background-attachment: fixed;
 }
 
@@ -282,38 +282,38 @@ h3 a :hover {
 }
 
 #about-header {
-  background-image: url(/assets/images/13.jpeg);
+  background-image: url(/wp-content/themes/coffeestories/assets/images/13.jpeg);
   background-attachment: fixed;
 }
 
 #blog-post-header {
-  background-image: url(/assets/images/7.jpeg);
+  background-image: url(/wp-content/themes/coffeestories/assets/images/7.jpeg);
   background-attachment: fixed;
 }
 
 #section-1 {
-  background-image: url(/assets/images/10.jpeg);
+  background-image: url(/wp-content/themes/coffeestories/assets/images/10.jpeg);
   background-attachment: scroll;
 }
 
 #section-2 {
-  background-image: url(/assets/images/11.jpeg);
+  background-image: url(/wp-content/themes/coffeestories/assets/images/11.jpeg);
   background-attachment: fixed;
 }
 
 #section-3 {
-  background-image: url(/assets/images/12.jpeg);
+  background-image: url(/wp-content/themes/coffeestories/assets/images/12.jpeg);
   background-attachment: scroll;
 }
 
 #section-4 {
-  background-image: url(/assets/images/6.jpeg);
+  background-image: url(/wp-content/themes/coffeestories/assets/images/6.jpeg);
   background-attachment: fixed;
   background-size: cover;
 }
 
 #section-5 {
-  background-image: url(/assets/images/14.jpeg);
+  background-image: url(/wp-content/themes/coffeestories/assets/images/14.jpeg);
   background-attachment: scroll;
   background-size: cover;
 }
