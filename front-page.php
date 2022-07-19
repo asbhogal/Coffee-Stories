@@ -145,7 +145,10 @@
             </center>
           </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <?php
+        wp_footer()
+    ?>
         <script type="text/javascript" src="/wp-content/themes/coffeestories/js/scroll-to-top.js"></script>
         <button id="scroll-to-top-btn" style="display: inline-block;"><i class="fas fa-chevron-up"></i></button>
 </body>
