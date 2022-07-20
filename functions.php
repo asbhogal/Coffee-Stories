@@ -1,5 +1,16 @@
 <?php
 
+    function coffeestories_menus() {
+        $locations = array(
+            'primary'   =>  "Primary Top Menu",
+            'footer'    =>  "Footer Menu"
+        );
+
+        register_nav_menus($locations);
+    }
+
+    add_action('init', 'coffeestories_menus');
+
     function coffeestories_register_styles () {
         $version = wp_get_theme()->get( 'Version' );
         wp_enqueue_style('coffeestories-stylesheet', get_template_directory_uri() . "/style.css", array(), $version, 'all');
