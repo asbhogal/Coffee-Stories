@@ -14,25 +14,14 @@
     ?>
 </head>
 <body>
-    <nav class="primary-navbar">
-        <ul>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="post.html">BLOG POST</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="page.html">BLOG PAGE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="archive.html">BLOG ARCHIVE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT US</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.html">LOGIN</a>
-            </li>
-        </ul>
-    </nav>
+<nav class="primary-navbar">
+    <?php
+        wp_nav_menu(
+            array(
+                'menu'              =>  'primary',
+                'container'         =>  '',
+                'theme_location'    =>  'primary'
+            )
+        )
+    ?>
+</nav>
