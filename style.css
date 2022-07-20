@@ -318,6 +318,10 @@ h3 a :hover {
   background-size: cover;
 }
 
+.post-thumb {
+  border-radius: 50%;
+}
+
 .section {
   top: 0;
   bottom: 0;
