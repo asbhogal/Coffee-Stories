@@ -38,15 +38,24 @@
         register_sidebar(
             array(
                 'id'                =>  'sidebar-1',
+                'name'              =>  'Sidebar Area',
+                'description'       =>  'Sidebar Widget Area',
                 'before_title'      =>  '',
                 'after_title'       =>  '',
                 'before_widget'     =>  '',
-                'after_widget'      =>  '',
-            ),
+                'after_widget'      =>  ''
+            )
+        );
+
+        register_sidebar(
             array(
-                'id'                =>  'sidebar-2',
-                'name'              =>  'Sidebar Area',
-                'description'       =>  'Sidebar Widget Area',
+                'id'                =>  'footer-1',
+                'name'              =>  'Footer Area',
+                'description'       =>  'Footer Widget Area',
+                'before_title'      =>  '',
+                'after_title'       =>  '',
+                'before_widget'     =>  '',
+                'after_widget'      =>  ''
             )
         );
     }
