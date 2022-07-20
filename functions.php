@@ -33,4 +33,23 @@
     }
 
     add_action( 'after_setup_theme', 'coffeestories_theme_support' );
+
+    function coffeestories_widget_areas(){
+        register_sidebar(
+            array(
+                'id'                =>  'sidebar-1',
+                'before_title'      =>  '',
+                'after_title'       =>  '',
+                'before_widget'     =>  '',
+                'after_widget'      =>  '',
+            ),
+            array(
+                'id'                =>  'sidebar-2',
+                'name'              =>  'Sidebar Area',
+                'description'       =>  'Sidebar Widget Area',
+            )
+        );
+    }
+
+    add_action( 'widgets_init', 'coffeestories_widget_areas');
 ?>
