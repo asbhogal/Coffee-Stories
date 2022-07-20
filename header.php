@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Coffee Stories Blog">
-    <meta name="author" content="https://amansinghbhogal.com/">    
-    <link rel="shortcut icon" href="\wp-content\themes\coffeestories\assets\images\logos\Logo.png"> 
+    <meta name="author" content="https://amansinghbhogal.com/">
     <?php
         wp_head();
     ?>
