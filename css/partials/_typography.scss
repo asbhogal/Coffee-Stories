@@ -3,8 +3,8 @@
     font-family: 'The Nautigal', cursive;
     font-style: regular;
     font-weight: 400;
-    src:    url('/typography/TheNautigal-Regular.woff') format('woff'),
-            url('/typography/TheNautigal-Regular.woff2') format('woff2');
+    src:    url('..\..\fonts\TheNautigal-Regular.woff') format('woff'),
+            url('..\..\fonts\TheNautigal-Regular.woff2') format('woff2');
 }
 
 /* ROBOTO CONDENSED - LATIN - 300 LIGHT */
@@ -12,6 +12,6 @@
     font-family: 'Roboto Condensed', sans-serif;
     font-style: light;
     font-weight: 300;
-    src:    url('typography/RobotoCondensed-Light.woff') format('woff'),
-            url('typography/RobotoCondensed-Light.woff2') format('woff2');
+    src:    url('..\..\fonts\RobotoCondensed-Light.woff') format('woff'),
+            url('..\..\fonts\RobotoCondensed-Light.woff2') format('woff2');
 }

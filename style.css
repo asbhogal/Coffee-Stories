@@ -8,19 +8,18 @@ Author: Aman Singh Bhogal
 Author URI: https://amansinghbhogal.com/
 */
 /* THE NAUTIGAL - LATIN - 400 REGULAR */
-@import url("https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap");
 @font-face {
   font-family: "The Nautigal", cursive;
   font-style: regular;
   font-weight: 400;
-  src: url("/typography/TheNautigal-Regular.woff") format("woff"), url("/typography/TheNautigal-Regular.woff2") format("woff2");
+  src: url("....\fontsTheNautigal-Regular.woff") format("woff"), url("....\fontsTheNautigal-Regular.woff2") format("woff2");
 }
 /* ROBOTO CONDENSED - LATIN - 300 LIGHT */
 @font-face {
   font-family: "Roboto Condensed", sans-serif;
   font-style: light;
   font-weight: 300;
-  src: url("typography/RobotoCondensed-Light.woff") format("woff"), url("typography/RobotoCondensed-Light.woff2") format("woff2");
+  src: url("....\fontsRobotoCondensed-Light.woff") format("woff"), url("....\fontsRobotoCondensed-Light.woff2") format("woff2");
 }
 .contact-section {
   display: flex;
@@ -169,6 +168,7 @@ form .form-row .textarea {
      width: 40%!important;
    }*/
 }
+/*@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');*/
 html {
   scroll-behavior: smooth;
 }
