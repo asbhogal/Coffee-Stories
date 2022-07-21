@@ -16,8 +16,7 @@ Welcome to Coffee Stories. A hub for your tales, and from those around the world
  * Initial Release
 
 == Resources ==
-*
-*
+[SEE ATTRIBUTIONS.txt]
 *
 *
 *
