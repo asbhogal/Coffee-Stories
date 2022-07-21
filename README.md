@@ -1,6 +1,7 @@
 === Coffee Stories ===
 Requires at least: 6.0
 Tested at: 6.0
+Requires PHP: 8.1
 License: ______
 License URI: 
 
