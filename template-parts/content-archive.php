@@ -1,6 +1,6 @@
 <!--<div class="container">-->
 <!--<div id="blog-archive-container">-->
-<head><title><?php the_title(); ?></title></head>
+<head><title><?php the_permalink(); ?></title></head>
 <div class="post">
         <div class="media">
             <img class="post-thumb" 
@@ -10,7 +10,7 @@
             alt="image"> 
             <div class="media-body">
                 <h3>
-                    <a href="
+                    <a class = "blog-post-archive-post-title" href="
                     <?php the_permalink(); ?>"> <?php the_title(); ?>
                     </a>
                 </h3>

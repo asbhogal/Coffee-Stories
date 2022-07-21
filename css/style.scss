@@ -9,7 +9,7 @@ Author URI: https://amansinghbhogal.com/
 */
 
 
-@import "partials/variables", "partials/typography", "partials/mixins", "partials/contactform";
+@import "partials/variables", "partials/typography", "partials/mixins", "partials/responsive", "partials/contactform";
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
 
 html {
@@ -96,11 +96,7 @@ h3 a{
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .container {
-        padding: 0 80px;
-    }
-}
+
 
 .post {
     text-align: center;
@@ -118,9 +114,13 @@ h3 a{
         font-family: $body-font;
         text-decoration: none;
         color: #111;
-        /*.current {
-         color: red;
+        /*:hover {
+            transition: 1s all ease-in;
+            background: red;
         }*/
+    }
+    .page-numbers.current {
+        color: $font-color-primary;
     }
 }
 
@@ -384,6 +384,13 @@ hr {
 
 }
 
+.blog-post-archive-post-title h3 {
+    color: $font-color-primary;
+    :hover {
+        color: $dark-brown-color;
+    }
+}
+
 .header-separator {
     width: 50%;
     margin: 20px 0;
@@ -459,43 +466,6 @@ hr {
     }
 }
 
-@media screen and (max-width: 900px) {
-	.primary-navbar ul,
-    .footer-navbar ul {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #main-footer {
-		position: relative;
-		bottom: 0px;
-	}
-
-    .social {
-        display: flex;
-        justify-content: center;
-    }
-
-	.footer-main-content {
-		flex-wrap: wrap;
-		flex-direction: column;
-        align-items: center;
-        h2, p {
-            text-align: center;
-        }
-		.box {
-			margin: 5px 0;
-		}
-	}
-
-    .middle.box {
-        text-align: center;
-    }
-
-    .email input {
-        width: 97.5%;
-    }
-}
 
 .copyright-banner {
     text-align: center;
@@ -538,14 +508,6 @@ hr {
     z-index: 99999 !important;
 }
 
-@media only screen and (max-width: 768px) {
-    #scroll-to-top-btn {
-    	display: block !important;
-    	z-index: 99999 !important;
-    	font-size: 16px !important;
-	}
-}
-
 img {
     max-width: 100%;
 }
@@ -562,12 +524,6 @@ img {
 
 a.more-link {
     text-transform: uppercase;
-}
-
-@media (max-width: 900px) {
-    .contact-form-container {
-        width: auto;
-    }
 }
 
 .blockquote-footer {
