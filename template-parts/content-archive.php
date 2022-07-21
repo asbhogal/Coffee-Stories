@@ -1,6 +1,6 @@
 <!--<div class="container">-->
 <!--<div id="blog-archive-container">-->
-
+<head><title><?php the_title(); ?></title></head>
 <div class="post">
         <div class="media">
             <img class="post-thumb" 
