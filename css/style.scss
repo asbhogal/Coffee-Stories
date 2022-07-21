@@ -156,8 +156,15 @@ h3 a{
 }
 
 .home-page-tag-cloud {
-    padding: 0 90px;
+    margin: 0 275px;
     color: $font-color-primary !important;
+    a {
+        color: $font-color-primary;
+        text-decoration: none;
+        :hover {
+            color: red;
+        }
+    }
 }
 
 .attachment-thumbnail {
@@ -268,6 +275,11 @@ h3 a{
 
 #single-blog-post-container {
     padding: 70px 125px;
+}
+
+.single-blog-post-header a {
+        text-decoration: none;
+        color: $font-color-primary;
 }
 
 .single-blog-post-header,
