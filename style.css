@@ -388,43 +388,6 @@ h3 a :hover {
   justify-content: center;
 }
 
-#about-header {
-  background-image: url(/wp-content/themes/coffeestories/images/13.jpeg);
-  background-attachment: fixed;
-}
-
-#blog-post-header {
-  background-image: url(/wp-content/themes/coffeestories/images/7.jpeg);
-  background-attachment: fixed;
-}
-
-#section-1 {
-  background-image: url(/wp-content/themes/coffeestories/images/10.jpeg);
-  background-attachment: scroll;
-}
-
-#section-2 {
-  background-image: url(/wp-content/themes/coffeestories/images/11.jpeg);
-  background-attachment: fixed;
-}
-
-#section-3 {
-  background-image: url(/wp-content/themes/coffeestories/images/12.jpeg);
-  background-attachment: scroll;
-}
-
-#section-4 {
-  background-image: url(/wp-content/themes/coffeestories/images/6.jpeg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#section-5 {
-  background-image: url(/wp-content/themes/coffeestories/images/14.jpeg);
-  background-attachment: scroll;
-  background-size: cover;
-}
-
 .post-thumb {
   border-radius: 50%;
 }
