@@ -2,6 +2,8 @@
     get_header();
 ?>
 <!--<div id="content-body">-->
+    <div id="main-header"></div>
+    <div id="blog-posts-top"><h1>Blog Posts Archive</h1></div>
     <div id="blog-archive-container">
 
     <?php

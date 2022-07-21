@@ -10,7 +10,7 @@ Author URI: https://amansinghbhogal.com/
 
 
 @import "partials/variables", "partials/typography", "partials/mixins", "partials/contactform";
-/*@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 p {
-    color: $font-color;
+    color: $dark-brown-color;
 }
 
 h1 {
@@ -57,7 +57,7 @@ ol {
 }
 
 a {
-    color: $brown-color;
+    color: $dark-brown-color;
     transition: $transitions-long;
 }
 
@@ -102,6 +102,28 @@ h3 a{
     }
 }
 
+.post {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.navigation, .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    .page-numbers {
+        background: #402c1c85;
+        padding: 9px;
+        border-radius: 2px;
+        font-family: $body-font;
+        text-decoration: none;
+        color: #111;
+        /*.current {
+         color: red;
+        }*/
+    }
+}
+
 #blog-archive-container {
     display: flex;
     align-items: flex-end;
@@ -111,7 +133,7 @@ h3 a{
     text-align: center;
 }
 
-/*#main-header,
+#main-header,
 .main-header-content {
     display: flex;
     flex-direction: column;
@@ -122,10 +144,24 @@ h3 a{
     height: 100vh;
     background-image: url(/wp-content/themes/coffeestories/images/5.jpeg);
     background-attachment: fixed;
-}*/
+}
 
 .main-header-content {
     text-align: end;
+}
+
+.cs-homepage-blog-posts {
+    padding: 0 90px;
+    color: $font-color;
+}
+
+.home-page-tag-cloud {
+    padding: 0 90px;
+    color: $font-color-primary !important;
+}
+
+.attachment-thumbnail {
+    display: none;
 }
 
 #section-overlay {

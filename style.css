@@ -8,6 +8,7 @@ Author: Aman Singh Bhogal
 Author URI: https://amansinghbhogal.com/
 */
 /* THE NAUTIGAL - LATIN - 400 REGULAR */
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap");
 @font-face {
   font-family: "The Nautigal", cursive;
   font-style: regular;
@@ -169,7 +170,6 @@ form .form-row .textarea {
      width: 40%!important;
    }*/
 }
-/*@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');*/
 html {
   scroll-behavior: smooth;
 }
@@ -181,7 +181,7 @@ html {
 body {
   display: block;
   margin: 0;
-  background: rgba(64, 35, 15, 0.5019607843);
+  background: rgba(64, 35, 15, 0.2784313725);
 }
 
 /*********** TYPOGRAPHY ***********/
@@ -191,7 +191,7 @@ h3,
 h4,
 h5,
 p {
-  color: whitesmoke;
+  color: #402c1c;
 }
 
 h1 {
@@ -213,7 +213,7 @@ ol {
 }
 
 a {
-  color: #654321;
+  color: #402c1c;
   transition: all 1s ease-in-out;
 }
 
@@ -256,6 +256,28 @@ h3 a :hover {
     padding: 0 80px;
   }
 }
+.post {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.navigation, .pagination {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.navigation .page-numbers, .pagination .page-numbers {
+  background: rgba(64, 44, 28, 0.5215686275);
+  padding: 9px;
+  border-radius: 2px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  color: #111;
+  /*.current {
+   color: red;
+  }*/
+}
+
 #blog-archive-container {
   display: flex;
   align-items: flex-end;
@@ -265,20 +287,27 @@ h3 a :hover {
   text-align: center;
 }
 
-/*#main-header,
+#main-header,
 .main-header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    width:100%;
-    margin: 0 auto;
-    height: 100vh;
-    background-image: url(/wp-content/themes/coffeestories/images/5.jpeg);
-    background-attachment: fixed;
-}*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url(/wp-content/themes/coffeestories/images/5.jpeg);
+  background-attachment: fixed;
+}
+
 .main-header-content {
   text-align: end;
+}
+
+.cs-homepage-blog-posts {
+  padding: 0 90px;
+  color: whitesmoke a;
+  color-text-align: center;
 }
 
 #section-overlay {

@@ -1,6 +1,7 @@
 <!--<div class="container">-->
 <!--<div id="blog-archive-container">-->
-    <div class="post">
+
+<div class="post">
         <div class="media">
             <img class="post-thumb" 
             src="<?php
@@ -15,6 +16,7 @@
                 </h3>
                 <div class="meta">
                     <span class="date"><?php the_date()."   |   "?></span>
+                    <br></br>
                     <span class="comment">
                         <a href="#">
                             <?php
