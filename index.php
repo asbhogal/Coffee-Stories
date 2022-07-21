@@ -1,7 +1,8 @@
 <?php
     get_header();
 ?>
-<div id="main-header" class="main-header-content">
+<!--<div id="content-body">-->
+<div id="blog-archive-container">
 
     <?php
         if( have_posts() ) {
@@ -13,6 +14,7 @@
     ?>
 
 </div>
+<!--</div>-->
 
 <?php
     the_posts_pagination();

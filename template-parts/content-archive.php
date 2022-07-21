@@ -1,4 +1,5 @@
-<div class="container">
+<!--<div class="container">-->
+<!--<div id="blog-archive-container">-->
     <div class="post">
         <div class="media">
             <img class="post-thumb" 
@@ -39,4 +40,5 @@
         </div><!--//media-->
         <p></p>
     </div>
-</div>
+<!--</div>-->
+<!--</div>-->
