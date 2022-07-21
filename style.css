@@ -306,8 +306,16 @@ h3 a :hover {
 
 .cs-homepage-blog-posts {
   padding: 0 90px;
-  color: whitesmoke a;
-  color-text-align: center;
+  color: whitesmoke;
+}
+
+.home-page-tag-cloud {
+  padding: 0 90px;
+  color: whitesmoke !important;
+}
+
+.attachment-thumbnail {
+  display: none;
 }
 
 #section-overlay {
@@ -404,6 +412,32 @@ h3 a :hover {
 
 #comments {
   font-family: "Roboto Condensed", sans-serif;
+}
+
+.comments-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 400px;
+}
+.comments-wrapper textarea, .comments-wrapper input {
+  border: none;
+  border-radius: 5px;
+}
+
+#single-blog-post-container {
+  padding: 70px 125px;
+}
+
+.single-blog-post-header,
+.single-blog-post-container-title {
+  text-align: center;
+}
+.single-blog-post-header span,
+.single-blog-post-container-title span {
+  background: #654321;
+  padding: 8px;
+  border-radius: 2px;
 }
 
 /*********** NAVIGATIONS ***********/

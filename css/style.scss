@@ -63,11 +63,11 @@ a {
 
 a:hover {
     transition: $transitions-long;
-    color: $font-color;
+    color: $font-color-primary;
 }
 
 h3 a{
-    color: $font-color;
+    color: $font-color-primary;
     font-weight: 600;
     text-decoration: none;
     transition: $transitions-short;
@@ -152,7 +152,7 @@ h3 a{
 
 .cs-homepage-blog-posts {
     padding: 0 90px;
-    color: $font-color;
+    color: $font-color-primary;
 }
 
 .home-page-tag-cloud {
@@ -255,6 +255,31 @@ h3 a{
     font-family: $body-font;
 }
 
+.comments-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 400px;
+    textarea, input {
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+#single-blog-post-container {
+    padding: 70px 125px;
+}
+
+.single-blog-post-header,
+.single-blog-post-container-title {
+    text-align: center;
+    span {
+        background: $brown-color;
+        padding: 8px;
+        border-radius: 2px;
+    }
+}
+
 /*********** NAVIGATIONS ***********/
 
 .primary-navbar {
@@ -268,7 +293,7 @@ h3 a{
 }
 
 span {
-    color: $font-color;
+    color: $font-color-primary;
 }
 
 .footer-main-content {
@@ -323,7 +348,7 @@ hr {
     }
     :hover {
         transition: $transitions-short;
-        color: $font-color;
+        color: $font-color-primary;
     }
 
 }
@@ -382,7 +407,7 @@ hr {
     background: #000;
     padding: 15px;
     a {
-        color: $font-color;
+        color: $font-color-primary;
         transition: $transitions-short;
     }
     a:hover {
@@ -447,7 +472,7 @@ hr {
         padding: 20px;
     }
     a {
-        color: $font-color;
+        color: $font-color-primary;
         text-decoration: none;
     }
 }
@@ -494,7 +519,7 @@ img {
 }
 
 .content-body {
-    color: $font-color;
+    color: $font-color-primary;
 }
 
 .blog-nav {

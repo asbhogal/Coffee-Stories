@@ -1,5 +1,8 @@
-<div class="container">
-    <header class="content-header">
+<div id="single-blog-post-container">
+    <div class="single-blog-post-container-title">
+        <h1><?php the_title(); ?></h1>
+    </div>
+    <header class="content-header single-blog-post-header">
         <div class="meta">
             <span class="date"><?php the_date() ?></span>
             <?php
