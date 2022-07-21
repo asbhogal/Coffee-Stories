@@ -49,12 +49,25 @@
         </div>
         </div>
         <div class="bottom">
-            <center>
-              <span class="credit">Created By <a href="https://www.amansinghbhogal.com/x">Aman Singh Bhogal</a> | </span>
-              <span class="far fa-copyright"></span><span> 2022</span>
+            <center>            
+            <nav class="footer-navbar">
+            <?php
+                wp_nav_menu(
+                    array(
+                        'menu'              =>  'footer',
+                        'container'         =>  '',
+                        'theme_location'    =>  'footer'
+                    )
+                )
+            ?>
+            </nav>
+            <span class="credit">Created By <a href="https://www.amansinghbhogal.com/x">Aman Singh Bhogal</a> | </span>
+            <span class="far fa-copyright"></span><span> <?php echo date('Y'); ?></span>
             </center>
           </div>
         </footer>
+
+
 
     <?php
         wp_footer()

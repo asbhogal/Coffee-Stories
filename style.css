@@ -481,10 +481,28 @@ h3 a :hover {
   padding: 0 20px;
 }
 
+.footer-navbar {
+  display: flex;
+  justify-content: center;
+}
+.footer-navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.footer-navbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
 #main-footer {
   position: absolute;
   width: 100%;
   background: #111;
+}
+#main-footer h2, #main-footer p, #main-footer text {
+  color: whitesmoke;
 }
 
 span {

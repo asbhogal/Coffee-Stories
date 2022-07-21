@@ -298,10 +298,28 @@ h3 a{
     @include header-nav-styling;
 }
 
+.footer-navbar {
+    display: flex;
+    justify-content: center;
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+}
+
 #main-footer {
 	position: absolute;
 	width: 100%;
 	background: #111;
+    h2, p, text {
+        color: $font-color-primary;
+    }
 }
 
 span {
