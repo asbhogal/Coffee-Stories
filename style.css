@@ -80,9 +80,8 @@ Author URI: https://amansinghbhogal.com/
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/images/10.jpeg);
   flex-direction: column;
-  height: 100vh;
+  height: fit-content;
 }
 
 .contact-form-container {
@@ -276,6 +275,10 @@ a:hover {
   color: whitesmoke;
 }
 
+.wp-block-verse {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
 h3 a {
   color: whitesmoke;
   font-weight: 600;
@@ -340,78 +343,72 @@ h3 a :hover {
   text-align: center;
 }
 
-#main-header,
+/*#main-header,
 .main-header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  margin: 0 auto;
-  height: 100vh;
-  background-image: url(/wp-content/themes/coffeestories/images/5.jpeg);
-  background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width:100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url(/wp-content/themes/coffeestories/images/5.jpeg);
+    background-attachment: fixed;
 }
 
 .main-header-content {
-  text-align: end;
+    text-align: end;
 }
 
 .cs-homepage-blog-posts {
-  padding: 0 90px;
-  color: whitesmoke;
+    padding: 0 90px;
+    color: $font-color-primary;
 }
 
 .home-page-tag-cloud {
-  margin: 0 275px;
-  color: whitesmoke !important;
-}
-.home-page-tag-cloud a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-.home-page-tag-cloud a :hover {
-  color: red;
+    margin: 0 275px;
+    color: $font-color-primary !important;
+    a {
+        color: $font-color-primary;
+        text-decoration: none;
+        :hover {
+            color: red;
+        }
+    }
 }
 
 .attachment-thumbnail {
-  display: none;
+    display: none;
 }
 
 #section-overlay {
-  background-color: rgba(0, 0, 0, 0.4784313725);
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+    background-color: #0000007a;
+    height: 100vh;
+    width: 100%;
+    @include flex-centralised;
 }
 
 .post-thumb {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .section {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  height: 100vh;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include flex-centralised;
+    width:100%;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 .about-section {
-  padding: 40px 0;
+    padding: 40px 0;
 }
 
 .page-title {
-  margin-top: 90px;
+    margin-top: 90px;
 }
 
 /*********** BUTTONS ***********/
@@ -463,7 +460,7 @@ h3 a :hover {
 }
 .single-blog-post-header span,
 .single-blog-post-container-title span {
-  background: #654321;
+  background: #3a3530;
   padding: 8px;
   border-radius: 2px;
   margin-inline: 3px;
@@ -601,6 +598,10 @@ hr {
 
 .content .fas {
   margin-right: 10px;
+}
+
+.fa-tag {
+  margin-right: 5px;
 }
 
 .email input {

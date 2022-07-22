@@ -66,6 +66,10 @@ a:hover {
     color: $font-color-primary;
 }
 
+.wp-block-verse {
+    font-family: $body-font !important;
+}
+
 h3 a{
     color: $font-color-primary;
     font-weight: 600;
@@ -131,7 +135,7 @@ h3 a{
     text-align: center;
 }
 
-#main-header,
+/*#main-header,
 .main-header-content {
     display: flex;
     flex-direction: column;
@@ -247,7 +251,7 @@ h3 a{
 .single-blog-post-container-title {
     text-align: center;
     span {
-        background: $brown-color;
+        background: #3a3530;
         padding: 8px;
         border-radius: 2px;
         margin-inline: 3px;
@@ -363,6 +367,9 @@ hr {
 
 .content .fas {
 	margin-right: 10px;
+}
+.fa-tag {
+    margin-right: 5px;
 }
 
 .email input {

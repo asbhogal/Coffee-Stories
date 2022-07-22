@@ -1,7 +1,6 @@
 <?php
     get_header();
 ?>
-<head><title><?php the_permalink(); ?></title></head>
 <!--<div id="content-body">-->
     <div id="main-header"></div>
 <!--    <div id="blog-posts-top"><h1>Blog Posts Archive</h1></div>-->

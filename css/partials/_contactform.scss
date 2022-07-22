@@ -2,9 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/images/10.jpeg);
     flex-direction: column;
-    height: 100vh;
+    height: fit-content;
 }
 
 .contact-form-container {
