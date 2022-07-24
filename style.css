@@ -338,6 +338,11 @@ h3 a :hover {
   display: flex;
   align-items: flex-end;
   margin-top: 215px;
+  justify-content: center;
+}
+#blog-archive-container h1 {
+  position: absolute;
+  top: 40px;
 }
 
 .archive-post-snippet {
