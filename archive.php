@@ -5,7 +5,7 @@
     <div id="main-header"></div>
 <!--    <div id="blog-posts-top"><h1>Blog Posts Archive</h1></div>-->
     <div id="blog-archive-container">
-    <h1>Blog Post Archive</h1>
+    <h1 class="blog-archive-header">Blog Post Archive</h1>
     <?php
         if( have_posts() ) {
             while( have_posts() ) {
