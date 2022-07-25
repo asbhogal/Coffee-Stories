@@ -152,7 +152,7 @@ h3 a{
     height: 100vh;
     background-image: url(/wp-content/themes/coffeestories/images/5.jpeg);
     background-attachment: fixed;
-}
+}*/
 
 .main-header-content {
     text-align: end;
@@ -169,9 +169,9 @@ h3 a{
     a {
         color: $font-color-primary;
         text-decoration: none;
-        :hover {
-            color: red;
-        }
+    }
+    a:hover {
+        color: red !important;
     }
 }
 
