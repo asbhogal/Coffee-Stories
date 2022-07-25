@@ -368,6 +368,16 @@ h3 a :hover {
 .cs-homepage-blog-posts {
   padding: 0 90px;
   color: whitesmoke;
+  text-align: center;
+}
+.cs-homepage-blog-posts .wp-block-latest-posts__post-title {
+  font-size: 22px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.cs-homepage-blog-posts .wp-block-latest-posts__post-author,
+.cs-homepage-blog-posts .wp-block-latest-posts__post-date {
+  padding-top: 10px !important;
 }
 
 .home-page-tag-cloud {
@@ -379,7 +389,7 @@ h3 a :hover {
   text-decoration: none;
 }
 .home-page-tag-cloud a:hover {
-  color: red !important;
+  color: #654321 !important;
 }
 
 .attachment-thumbnail {
@@ -412,6 +422,14 @@ h3 a :hover {
   width: 100%;
   margin: 0 auto;
   height: 100vh;
+}
+
+.wp-block-button {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.wp-block-button a:hover {
+  background: red;
+  transition: 1s all ease;
 }
 
 .about-section {
