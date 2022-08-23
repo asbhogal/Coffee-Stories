@@ -2,8 +2,6 @@
 <br>Requires at least: 6.0
 <br>Tested at: 6.0
 <br>Requires PHP: 8.1
-<br>License: ______
-<br>License URI: 
 
 This repository and its contents are protected by copyright law. Please submit a request to the owner if you wish to utilise the theme and/or its components/code for your own work.
 
